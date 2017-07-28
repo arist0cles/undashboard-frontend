@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13f2b466-1d32-49c3-ab94-9c925a30c968" name="Default" comment="" />
+    <list default="true" id="13f2b466-1d32-49c3-ab94-9c925a30c968" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+    </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
     <ignored path="$PROJECT_DIR$/tmp/" />
@@ -18,8 +20,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="134">
-              <caret line="45" column="96" lean-forward="true" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
+            <state relative-caret-position="202">
+              <caret line="305" column="46" lean-forward="true" selection-start-line="305" selection-start-column="46" selection-end-line="305" selection-end-column="46" />
               <folding />
             </state>
           </provider>
@@ -115,15 +117,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1501235455929</updated>
-      <workItem from="1501235457143" duration="812000" />
+      <workItem from="1501235457143" duration="1699000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="812000" />
+    <option name="totallyTimeSpent" value="1699000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
@@ -158,8 +160,8 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="134">
-          <caret line="45" column="96" lean-forward="true" selection-start-line="45" selection-start-column="96" selection-end-line="45" selection-end-column="96" />
+        <state relative-caret-position="202">
+          <caret line="305" column="46" lean-forward="true" selection-start-line="305" selection-start-column="46" selection-end-line="305" selection-end-column="46" />
           <folding />
         </state>
       </provider>
