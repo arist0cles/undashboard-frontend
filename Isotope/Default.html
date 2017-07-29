@@ -1,0 +1,119 @@
+@{
+    
+}
+
+
+<div class="container-fluid">
+
+    <h2>Isotope</h2>
+
+    <nav>
+        <div class="webArea">
+            <div id="subnav">
+		        <nav class="parent">
+			        <span class="section-title"><a href="">MEDIA TYPES</a></span>
+				        <ul>
+					        <li class="filter"><a href="#filter=*">All Media</a></li>
+					        <li class="filter"><a href="#filter=.video">Video</a></li>
+					        <li class="filter"><a href="#filter=.audio">Audio</a></li>
+                        </ul>
+	            </nav>
+	        </div>            
+        </div>
+    </nav>
+    
+    <section>
+        <div class="webArea">
+            <div id="grid">
+                <div class="item audio isotope-item green">
+			    
+			    </div>
+                <div class="item featured video isotope-item blue">
+			        <a href=""></a>
+                    <a class="name" href="">Testing Overlay</a>
+		        </div>
+                <div class="item audio isotope-item red">
+			    
+			    </div>
+                <div class="item audio isotope-item blue">
+			    
+			    </div>
+                <div class="item video isotope-item yellow">
+			    
+			    </div>
+                <div class="item audio isotope-item red">
+			    
+			    </div>
+                <div class="item audio isotope-item blue">
+			    
+			    </div>
+                <div class="item video isotope-item yellow">
+			    
+			    </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+@section FooterExtra{
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script src="js/jquery-1.7.1.min.js"></script>
+    <script src="js/jquery.isotope.min.js"></script>
+    <script src="js/jquery.ba-bbq.min.js"></script>
+    <script>			
+	        $(document).ready(function() {
+	 		
+	 	        $('.item .name').hide();
+	 	
+	        });
+	
+	        $(window).load(function() {
+					 		
+ 		        $('#grid').isotope({
+			        itemSelector: '.item'
+		        });
+		
+ 		        var $optionSets = $('.parent').find('ul'),
+                  isOptionLinkClicked = false;
+          
+ 		        // switches selected class on buttons
+	              function changeSelectedLink( $elem ) {
+	                // remove selected class on previous item
+	                $elem.parents('ul').find('.selected').removeClass('selected');
+	                // set selected class on new item
+	                $elem.addClass('selected');
+	              }
+  
+ 		        $('.filter a').click(function(){
+ 	              var $this = $(this);
+	                // don't proceed if already selected
+	                if ( $this.hasClass('selected') ) {
+	                  return;
+	                }
+ 		          changeSelectedLink( $this );
+		              // get href attr, remove leading #
+		          var href = $(this).attr('href').replace( /^#/, '' ),
+		              // convert href into object
+		              // i.e. 'filter=.inner-transition' -> { filter: '.inner-transition' }
+		              option = $.deparam( href, true );
+		          // set hash, triggers hashchange on window
+		          $.bbq.pushState( option );
+		          return false;
+		        });
+		
+		        $(window).bind( 'hashchange', function( event ){
+		          // get options object from hash
+		          var hashOptions = $.deparam.fragment();
+		          // apply options from hash
+		          $('#grid').isotope( hashOptions );
+        
+		        })
+		          // trigger hashchange to capture any hash data on init
+		          .trigger('hashchange');
+		
+		        $('#grid').css('visibility','visible');
+		
+ 	        });
+ 	
+    </script>
+}

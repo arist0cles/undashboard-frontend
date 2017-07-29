@@ -1,0 +1,39 @@
+/*------------------------------------*\
+  MAIN
+\*------------------------------------*/
+body {height:100%; width:100%; background: url("../img/bg_lightgrey.jpg") repeat scroll left top #F2F2F2; font-family: Arial,Helvetica,sans-serif; margin: 0;}
+
+.webArea { margin:0 auto; width:960px; height:auto;}
+
+header  { float: left; height: auto; margin: 20px 0 0 0; width: 100%;}
+    header h1 { font-size:30px;}
+
+nav     { float: left; height: auto; margin: 20px 0; width: 100%; overflow:hidden;}
+#subnav .parent { color: white; clear: left; float: left; background-color: #2E2E2E;
+                  -webkit-box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2); -moz-box-shadow: 3px 3px 0px rgba(0,0,0,0.2);
+                  box-shadow: 3px 3px 0px rgba(0, 0, 0, 0.2); height: 41px; margin: 30px 0 0 0; width: 100%;}
+        #subnav .parent .section-title { background-color: #E61C33;display: block; float: left; height: 41px; padding-left: 15px; margin-left: -1px; width: 120px;padding-top:12px;}
+        #subnav .parent .section-title a { text-decoration: none; color: white; font-weight:bold; }
+        #subnav .parent ul { float: left;margin: 14px 0 0 20px;width: auto;border: none; list-style: none; display:block;}
+        #subnav .parent li { margin: 0;padding: 0 20px 0 0; float: left;}
+        #subnav .parent li a{ text-decoration: none; color:white;}
+        
+section { float: left; height: auto; margin: 20px 0; width: 100%;}
+
+footer  { float: left; height: 50px; margin: 20px 0; width: 100%;}
+
+
+.isotope .isotope-item {-webkit-transition-property: -webkit-transform,opacity;-moz-transition-property: -moz-transform,opacity;transition-property: transform,opacity;}
+.isotope, .isotope .isotope-item {-webkit-transition-duration: 0.8s;-moz-transition-duration: 0.8s;transition-duration: 0.8s;}
+.isotope-item { background: transparent; width: 140px; height: 140px; margin: 0 20px 20px 0; z-index: 2;}
+
+.isotope-item a.name{background:transparent;color:#fff;display:none;font:1.4em/105% Arial,Helvetica,sans-serif;padding:10px 0 6px 10px;position:absolute;bottom:0px;left:0px;text-decoration:none;width:130px;}
+.isotope-item:hover a.name{display:block !important; background-color:rgba(0, 0, 0, 0.2);}
+.isotope-item.featured a.name{width:290px;}
+.isotope-item.featured { width: 300px; height: 300px; background: transparent; }
+.isotope-item a.name{bottom:0px;font:2em/105% Arial,Helvetica,sans-serif;padding:8px 0 7px 8px;}
+
+.green {background-color:green !important;}
+.blue {background-color:blue !important;}
+.yellow {background-color:yellow !important;}
+.red {background-color:red !important;}
